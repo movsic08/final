@@ -1,0 +1,99 @@
+    use to search in chat gpt 
+    short definition for database table field categories column name id
+
+
+    php artisan route:clear
+
+    php artisan view:clear
+
+    php artisan optimize
+
+    to run the website
+    php artisan serve       -- last command
+
+
+
+    if you only use 
+        php artisan serve
+
+        127.0.0.1:8000
+
+
+
+PARA SA LOCAL HOSTING
+
+una , dapat nakarun na yung xampp
+dapat di nakarun yunh php artisan serve
+dapat nakaconnect na kayo sa wifi ni jm at dapat nakaconnect din yung mga cp / user na magaaccess sa website
+
+
+punta ka sa baba, tapos mag add ka ng new command prompt terminal
+    cmd ang name niya 
+
+tapos irun mo to dun sa cmd 
+    ipconfig
+
+    hanapin niyo yung ito na part
+
+     IPv4 Address. . . . . . . . . . . : 192.168.43.49  -> tas kunin niyo to 
+
+    192.168.43.49
+
+    tas next hanapin niyo sa search 
+        .env
+
+    sa pinakataas na part sa may nakasulat na APP_URL=http://192.168.174.50
+
+    APP_NAME=Laravel
+    APP_ENV=local
+    APP_KEY=base64:DUUvJCwA19pcMxbdJDXpLfd2Ia/lHf0/UnV0v850i9w=
+    APP_DEBUG=true
+    APP_URL=http://192.168.174.50 -> palitan niyo to ng 192.168.43.49
+
+    output: 
+        APP_URL=http://192.168.43.49
+
+    save niyo yung .env na maging x na at hindi circle yung sa name ng file sa taas 
+        Ctrl+S 
+
+    next, balik kayo at gawa ng new Powershell terminal
+
+    tapos run niyo to 
+
+        php artisan config:clear
+
+    
+    After niyan ready na yung website 
+
+    irun niyo sa Powershell command prompt 
+
+        php artisan serve --host=[IPv4 Address na nakuha naten kanina] --port=8000
+
+        Ex. 
+        php artisan serve --host=192.168.43.49 --port=8000
+
+
+    para marun 
+        iopen niyo ang google chrome 
+
+        ienter mo to 
+        http://[IPv4 Address na nakuha naten kanina]:8000
+        
+        Ex.
+        http://192.168.43.49:8000
+
+    ito rin ang irurun sa mobile phones na nakaconnect sa wifi ni jm para maaccess nila ang website
+
+
+    local hosting 
+    http://[IPv4 Address na nakuha naten kanina]:8000
+
+    ex.
+    http://192.168.174.50:8000
+
+
+    sa admin naman, copuy niyo lang at iadd - /admin/login
+    
+    ex.
+    http://192.168.174.50:8000/admin/login
+
